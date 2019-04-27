@@ -22,7 +22,13 @@
 
 
 // design widths:
-@extra-small-mobile: ~'(min-width: 12.500em)';
-//23.438em  375px the original size aime for mobile
-@small-mobile: ~'(max-width: 31.250em)'; // 500px max width
+// @extra-small-mobile: ~'(min-width: 12.500em)'; // min 200px min screen width.
+/** MVP -> first target mobile screen size 23.438em or 375px **/
+@mini-mobile: ~'(max-width: 23.438em)'; // maximum of 375px.
+@mobile: ~'(min-width: 23.500em)'; // minimum of 376px
+// 25.875em = 414px width
+@tablet: ~'(min-width: 48.000em)'; // tablet 768px size. 
+/** figuring out how to implement. @tablet **/
+
+@lg-desktop: ~'(max-width: 90em)';
 // lg-desktop sized 1440px or 90em.
