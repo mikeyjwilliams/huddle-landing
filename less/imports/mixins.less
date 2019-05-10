@@ -4,3 +4,16 @@
     justify-content: @justify;
     flex-wrap: @wrap;
 }
+
+.button(@color: @secondary-color, @bg-color: @primary-color, @radius: @border-rad) {
+    color: @color;
+    background-color: @bg-color;
+    border-radius: @border-rad;
+
+    // .button:hover 
+    &:hover {
+        // flip colors used in button.
+        color: @bg-color;
+        background-color: @color;
+    }
+}
